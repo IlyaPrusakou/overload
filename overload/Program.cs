@@ -38,23 +38,23 @@ namespace overload
             Fuel -= km * FuelUsage / 100;
         }
 
-        public static bool operator <(FuelCar f1, FuelCar f2)
+        public static bool operator <(FuelCar f1, FuelCar f2) //overload operator
         {
             return f1.Engine < f2.Engine;
         }
-        public static bool operator >(FuelCar f1, FuelCar f2)
+        public static bool operator >(FuelCar f1, FuelCar f2) //overload operator
         {
             return f1.Engine > f2.Engine;
         }
-        public static bool operator ==(FuelCar f1, FuelCar f2)
+        public static bool operator ==(FuelCar f1, FuelCar f2) //overload operator
         {
             return f1.Engine == f2.Engine;
         }
-        public static bool operator !=(FuelCar f1, FuelCar f2)
+        public static bool operator !=(FuelCar f1, FuelCar f2) //overload operator
         {
             return f1.Engine != f2.Engine;
         }
-        public override bool Equals(object obj)
+        public override bool Equals(object obj) //overload equals
         {
             if (!(obj is FuelCar))
                 return false;
